@@ -1,6 +1,6 @@
 # AuthmeNodeTutorial
 
-**Hogy miert Nodejs es miert nem PHP** 
+**Hogy miert Nodejs es miert nem PHP** :scream::scream::scream:
 
 Authme weblogin tutorial NodeJS-be. 0-rol feleptunk egy alap nodejs alapu weboldalt, ami kezeli az authme felhasznalokat.
 
@@ -112,12 +112,13 @@ DataSource:
     # Database Name, use with converters or as SQLITE database name
     mySQLDatabase: VZcZY6yvcl
 ```
-# Hogyan kaphatok segítséget
+# :question::question: Hogyan kaphatok segítséget :question::question:
 
 Segitseget legkonnyebben discordon kaphatsz. Facebookon is valaszolok, de discordon lehet screen share-elni, liveolni és forrás kodot beilleszteni.
 
 [![discord](https://discordapp.com/api/guilds/329854736998334464/embed.png?style=banner3)][discord]
 
+# Elerhetosegek
 [facebook]: https://fb.com/gmaster0o0 "gmaster0o0 Facebook oldala"
 [facebook]: https://fb.com/xminers "xtrememiners Facebook oldala"
 [youtube]: https://youtube.com/epiteszsuli "Epitesz suli youtube oldala"
