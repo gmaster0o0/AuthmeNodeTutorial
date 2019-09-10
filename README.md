@@ -16,7 +16,8 @@ https://nodejs.org/en/
 
 - **Adatbazis**
   Az adattarolashoz szuksegunk lesz egy SQL adatbazisa. 
-  Az authme configja a kovetkezoket tamogatja:  
+  Az authme configja a kovetkezoket tamogatja:
+  
   | SQL | link | package leírás | telepítő parancs|
   | ---- | ---- | ---- | ---- |
   | SQLITE | https://www.sqlite.org/index.html | https://www.npmjs.com/package/mysql2 | npm install --save mysql2 |
