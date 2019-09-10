@@ -39,7 +39,9 @@ https://code.visualstudio.com/
 
 - **Minecraft szerver**
 1. Teszteleshez toltsd le es indits el egy minecraft szervert local gepre,
+Mi az 1.12 paper spigot legacyt fogjuk hasznalni: https://papermc.io/legacy
 2. Rakj fel egy authme plugin-t
+Authme Reloaded plugin: https://www.spigotmc.org/resources/authmereloaded.6269/
 3. Configold be, a configfileba allitsd be az adatbazist.
 
 
