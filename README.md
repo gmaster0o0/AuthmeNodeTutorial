@@ -7,32 +7,36 @@ A tutorial, az authme integaciorol szol, az erintett technologiak nem mutatja be
 
 ## Amire szukseged lesz: fejlesztesi kornyezet beallitasa
 
+**Letoltendo programok**
 
-### Letoltendo programok
 
-
-#### NodeJS
+- **NodeJS**
 Toltsd le es telepitsd a NodeJS-t. LST verzio tokeltes lesz.
 https://nodejs.org/en/
 
-#### Adatbazis
-Az adattarolashoz szuksegunk lesz egy SQL-re
+- **Adatbazis**
+Az adattarolashoz szuksegunk lesz egy SQL adatbazisa. 
+Az authme configja a kovetkezoket tamogatja:  
+SQL | link | package leírás | telepítő parancs
+SQLITE | https://www.sqlite.org/index.html | https://www.npmjs.com/package/mysql2 | npm install --save mysql2
+MYSQL | https://www.mysql.com/ | https://www.npmjs.com/package/sqlite3 | npm install --save sqlite3
+POSTGRESQL | https://www.postgresql.org/ | https://node-postgres.com/ | npm install pg
 
-#### VSCode
+- **VSCode**
 Toltsd le es telepitsd a Node
 https://code.visualstudio.com/
 
-#### Minecraft szerver
+- **Minecraft szerver**
 1. Teszteleshez toltsd le es indits el egy minecraft szervert local gepre,
 2. Rakj fel egy authme plugin-t
 3. Configold be, a configfileba allitsd be az adatbazist.
 
 
-### NodeJS project beallitasa.
+# `1. NodeJS project beallitasa.`
 0rol elkezdhetjuk, vagy letoltjuk a git repot es onnan kezjuk
 
 
-#### 0 rol valo beallitas
+## 1.1a	0-rol valo beallitas
 
 
 ##### Project inicializalasa
@@ -52,12 +56,15 @@ npm install`
 https://expressjs.com/en/starter/generator.html
 
 
-#### Gitbol valo beallitas
+## 1.1b	Gitbol valo beallitas
 
+Töltsük le a repot es menjunk a starter mappaba, es telepitsuk a fuggosegeket
 
 `git clone git@github.com:gmaster0o0/AuthmeNodeTutorial.git`
 `cd authmeweb/starter`
 `npm install`
+
+
 
 
 
