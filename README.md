@@ -1,3 +1,5 @@
+[✔]: assets\Warning.png
+
 # AuthmeNodeTutorial
 
 **Hogy miert Nodejs es miert nem PHP** 
@@ -46,7 +48,7 @@ https://code.visualstudio.com/
 
 ##### Project inicializalasa
 `npm init`
-##### Express telepitese
+##### **Express** telepitese
 `npm install express`
 
 ##### Express project generalas
@@ -78,7 +80,7 @@ Mi a tutorialba, mi egy ingyenes mysql adatbazist fogunk hasznalni:
 https://remotemysql.com
 Az itt kapott adatokkal modositjuk az authme configjat. 
 
- <span style="color:red">NE HASZNÁLD AZ ITT LEVŐ PÉLDA ADATOKAT</span>.
+###  ![✔] <span style="color:red">**NE HASZNÁLD AZ ITT LEVŐ PÉLDA ADATOKAT**</span>.
 
 Példa: 
 ```Yaml
@@ -106,13 +108,3 @@ DataSource:
     # Database Name, use with converters or as SQLITE database name
     mySQLDatabase: VZcZY6yvcl
 ```
-
-
-
-
-
-
-
-
-
-
