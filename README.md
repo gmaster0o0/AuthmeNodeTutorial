@@ -6,6 +6,12 @@ Authme weblogin tutorial NodeJS-be. 0-rol feleptunk egy alap nodejs alapu webold
 
 A tutorial, az authme integaciorol szol, az erintett technologiak nem mutatja be. Minden erintett technologiarol leiras linkje megtalalhato az adott reszhez tartozo leirasnal, illetve a itt a fo oldalon a lap aljan.
 
+:tv: A tutorial megtalalhato a www.youtube.com/epiteszsuli csatornan. A Authme Tutorial lejatszasi listaba
+
+:tv: Minden resz elobe zajlik a www.youtube.com/epiteszsuli/live linkel lehet elerni ha epp van adas.
+
+
+
 ## Amire szukseged lesz: fejlesztesi kornyezet beallitasa
 
 **Letoltendo programok**
@@ -106,3 +112,12 @@ DataSource:
     # Database Name, use with converters or as SQLITE database name
     mySQLDatabase: VZcZY6yvcl
 ```
+# Hogyan kaphatok segítséget
+
+Segitseget legkonnyebben discordon kaphatsz. Facebookon is valaszolok, de discordon lehet screen share-elni, liveolni és forrás kodot beilleszteni.
+
+[![discord](https://discordapp.com/api/guilds/329854736998334464/embed.png?style=banner3)][discord]
+
+[facebook]: https://fb.com/gmaster0o0 "gmaster0o0 Facebook oldala"
+[facebook]: https://fb.com/xminers "xtrememiners Facebook oldala"
+[youtube]: https://youtube.com/epiteszsuli "Epitesz suli youtube oldala"
