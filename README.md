@@ -15,12 +15,16 @@ Toltsd le es telepitsd a NodeJS-t. LST verzio tokeltes lesz.
 https://nodejs.org/en/
 
 - **Adatbazis**
-Az adattarolashoz szuksegunk lesz egy SQL adatbazisa. 
-Az authme configja a kovetkezoket tamogatja:  
-SQL | link | package leírás | telepítő parancs
-SQLITE | https://www.sqlite.org/index.html | https://www.npmjs.com/package/mysql2 | npm install --save mysql2
-MYSQL | https://www.mysql.com/ | https://www.npmjs.com/package/sqlite3 | npm install --save sqlite3
-POSTGRESQL | https://www.postgresql.org/ | https://node-postgres.com/ | npm install pg
+  Az adattarolashoz szuksegunk lesz egy SQL adatbazisa. 
+  Az authme configja a kovetkezoket tamogatja:  
+  | SQL | link | package leírás | telepítő parancs|
+  | ---- | ---- | ---- | ---- |
+  | SQLITE | https://www.sqlite.org/index.html | https://www.npmjs.com/package/mysql2 | npm install --save mysql2 |
+  | MYSQL | https://www.mysql.com/ | https://www.npmjs.com/package/sqlite3 | npm install --save sqlite3 |
+  | POSTGRESQL | https://www.postgresql.org/ | https://node-postgres.com/ | npm install pg |
+
+
+
 
 - **VSCode**
 Toltsd le es telepitsd a Node
