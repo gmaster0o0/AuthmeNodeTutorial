@@ -1,4 +1,4 @@
-[✔]: assets\Warning.png
+[!]: assets/Warning.png
 
 # AuthmeNodeTutorial
 
@@ -80,7 +80,7 @@ Mi a tutorialba, mi egy ingyenes mysql adatbazist fogunk hasznalni:
 https://remotemysql.com
 Az itt kapott adatokkal modositjuk az authme configjat. 
 
-###  ![✔] <span style="color:red">**NE HASZNÁLD AZ ITT LEVŐ PÉLDA ADATOKAT**</span>.
+###  ![!] <span style="color:red">**NE HASZNÁLD AZ ITT LEVŐ PÉLDA ADATOKAT**</span>.
 
 Példa: 
 ```Yaml
