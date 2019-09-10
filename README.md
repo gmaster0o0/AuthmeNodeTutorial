@@ -1,4 +1,4 @@
-[!]: assets/Warning.png
+[!]: assets/Warning.png.jpg
 
 # AuthmeNodeTutorial
 
