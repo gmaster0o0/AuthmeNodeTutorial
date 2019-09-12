@@ -1,6 +1,7 @@
 # AuthmeNodeTutorial
 
 **Hogy miert Nodejs es miert nem PHP** :scream::scream::scream:
+https://youtu.be/MqY83YjA0JE?t=86
 
 Authme weblogin tutorial NodeJS-be. 0-rol feleptunk egy alap nodejs alapu weboldalt, ami kezeli az authme felhasznalokat.
 
