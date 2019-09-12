@@ -1,19 +1,21 @@
 # AuthmeNodeTutorial
 
+Authme weblogin tutorial NodeJS-be. 0-rol feleptunk egy alap nodejs alapu weboldalt, ami kezeli az authme felhasznalokat.
+
+**Mirol szol a tutorial**
+A tutorial, az authme integaciorol szol, az erintett technologiak nem mutatja be. Minden erintett technologiarol leiras linkje megtalalhato az adott reszhez tartozo leirasnal, illetve a itt a fo oldalon a lap aljan.
+
 **Hogy miert Nodejs es miert nem PHP** :scream::scream::scream:
 https://youtu.be/MqY83YjA0JE?t=86
 
 **Kinek ajanljuk?**
 Annak akit erdekel a programozas, javascript, vagy epp a szerveret szeretne kicsit feldobni.
 
-Authme weblogin tutorial NodeJS-be. 0-rol feleptunk egy alap nodejs alapu weboldalt, ami kezeli az authme felhasznalokat.
-
-A tutorial, az authme integaciorol szol, az erintett technologiak nem mutatja be. Minden erintett technologiarol leiras linkje megtalalhato az adott reszhez tartozo leirasnal, illetve a itt a fo oldalon a lap aljan.
-
-:tv: A tutorial megtalalhato a www.youtube.com/epiteszsuli csatornan. A Authme Tutorial lejatszasi listaba
-
+**Hol lathato a tutorial**
 :tv: Minden resz elobe zajlik a www.youtube.com/epiteszsuli/live linkel lehet elerni ha epp van adas.
 
+**Mi van ha lemaradtam**
+:tv: A tutorial megtalalhato a www.youtube.com/epiteszsuli csatornan. A Authme Tutorial lejatszasi listaba
 
 
 ## Amire szukseged lesz: fejlesztesi kornyezet beallitasa
