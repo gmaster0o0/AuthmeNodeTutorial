@@ -131,7 +131,6 @@ Segitseget legkonnyebben discordon kaphatsz. Facebookon is valaszolok, de discor
 
 [![discord](https://discordapp.com/api/guilds/329854736998334464/embed.png?style=banner3)][discord]
 
-# Elerhetosegek
-[facebook]: https://fb.com/gmaster0o0 "gmaster0o0 Facebook oldala"
-[facebook]: https://fb.com/xminers "xtrememiners Facebook oldala"
-[youtube]: https://youtube.com/epiteszsuli "Epitesz suli youtube oldala"
+# Ha hibat talaltok
+
+Akkor nyugodtan forkoljatok es kuldjetek pull requestet. Ha nem tudod mi az nem baj. Irj Issuet, vagy ha ezt se szeretnel, vagy tudsz jelezd discordon.
