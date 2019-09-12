@@ -3,6 +3,9 @@
 **Hogy miert Nodejs es miert nem PHP** :scream::scream::scream:
 https://youtu.be/MqY83YjA0JE?t=86
 
+**Kinek ajanljuk?**
+Annak akit erdekel a programozas, javascript, vagy epp a szerveret szeretne kicsit feldobni.
+
 Authme weblogin tutorial NodeJS-be. 0-rol feleptunk egy alap nodejs alapu weboldalt, ami kezeli az authme felhasznalokat.
 
 A tutorial, az authme integaciorol szol, az erintett technologiak nem mutatja be. Minden erintett technologiarol leiras linkje megtalalhato az adott reszhez tartozo leirasnal, illetve a itt a fo oldalon a lap aljan.
