@@ -51,6 +51,8 @@ Mi az 1.12 paper spigot legacyt fogjuk hasznalni: https://papermc.io/legacy
 Authme Reloaded plugin: https://www.spigotmc.org/resources/authmereloaded.6269/
 3. Configold be, a configfileba allitsd be az adatbazist.
 
+- **GIT** opcionalisan
+verzio kezelo rendszert fogunk hasznalni, de le is lehet tolteni zipkent es kicsomagolni.
 
 # `1. # project beallitasa.`
 0rol elkezdhetjuk, vagy letoltjuk a git repot es onnan kezjuk
@@ -83,6 +85,8 @@ Töltsük le a repot es menjunk a starter mappaba, es telepitsuk a fuggosegeket
 `git clone git@github.com:gmaster0o0/AuthmeNodeTutorial.git`
 `cd authmeweb/starter`
 `npm install`
+
+Ha nincs gitunk akkor a githubrol toltsuk le a zip-et es tomoritsuk ki: nagy zold gomb vagy itt a link:https://github.com/gmaster0o0/AuthmeNodeTutorial/archive/master.zip
 
 ## 1.2 SQL beállítása
 
