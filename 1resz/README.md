@@ -55,9 +55,13 @@ Fel tudjuk őket egyessével rakni, de egyszerűbb, ha bemásoljátok őket a de
 - felhasználó bejelentkezés  API része
 - Jelszó titkosítás SHA256-al.
 
-Ezekkel a funckiókkal már tudunk működő minecraftba regisztrálni, loginolni, következő részben, kicsit refaktiráljuk: 
+Ezekkel a funckiókkal már tudunk működő minecraftba regisztrálni, loginolni, 
+
+## következő részben, kicsit refaktiráljuk: 
 - csinálunk egy MVC(  https://hu.wikipedia.org/wiki/Modell-n%C3%A9zet-vez%C3%A9rl%C5%91 ) struktúrát.
 - A callback-eket átírjuk promise alapúra és az async await-et fogjuk hasznalni. 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await
 - Elkezdjük a VIEW-t vagyis a frontend-et elkészíteni Bootstrap segítségével: https://getbootstrap.com/
+### Következő adás: 
+**2019.09.18. 6-7 óra fele** youtube.com/epiteszsuli
