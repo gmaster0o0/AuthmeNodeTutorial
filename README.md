@@ -17,7 +17,8 @@ Annak akit erdekel a programozas, javascript, vagy epp a szerveret szeretne kics
 **Mi van ha lemaradtam**
 :tv: A tutorial megtalalhato a www.youtube.com/epiteszsuli csatornan. A Authme Tutorial lejatszasi listaba
 
-## 1. rész: https://youtu.be/s9tLocOKlPQ
+## 1. rész: https://youtu.be/s9tLocOKlPQ (2019.09.14)
+## 2. rész: 2019.09.18 6-7 óra körül-várható
 
 ## Amire szukseged lesz: fejlesztesi kornyezet beallitasa
 
