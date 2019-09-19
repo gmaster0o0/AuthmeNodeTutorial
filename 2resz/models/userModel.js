@@ -1,13 +1,11 @@
-const modelFactory = require('./modelFactory');
+const Model = require('./modelFactory');
+module.exports = class UserModel extends Model {
+  constructor() {
+    super('authme');
+  }
 
-const Model = modelFactory.createModel('authme');
-
-exports.createOne = item => {
-  item.regdate = Date.now();
-  return Model.createOne(item);
+  createOne(item) {
+    item.regdate = Date.now();
+    return super.createOne(item);
+  }
 };
-
-exports.getAll = Model.getAll;
-exports.getOne = Model.getOne;
-exports.updateOne = Model.updateOne;
-exports.deleteOne = Model.deleteOne;

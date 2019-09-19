@@ -1,16 +1,12 @@
-const AppError = require('../utils/error');
-const User = require('../models/userModel');
+const UserModel = require('../models/userModel');
+const catchAsync = require('../utils/catchAsync');
 
-exports.getAll = async (req, res, next) => {
-  try {
-    const [results] = await User.Model();
+const User = new UserModel();
+exports.getAll = catchAsync(async (req, res, next) => {
+  const [results] = await User.getAll();
 
-    res.json({
-      status: 'success',
-      data: results
-    });
-  } catch (error) {
-    console.log(error);
-    AppError(res, error, 500);
-  }
-};
+  res.json({
+    status: 'success',
+    data: results
+  });
+});
