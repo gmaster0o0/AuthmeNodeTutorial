@@ -1,5 +1,3 @@
-const AppError = require('../utils/error');
-
 const createError = (error, req, res) => {
   console.log(error);
   return res.status(error.statusCode).json({

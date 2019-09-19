@@ -1,4 +1,5 @@
 const Model = require('./modelFactory');
+
 module.exports = class UserModel extends Model {
   constructor() {
     super('authme');

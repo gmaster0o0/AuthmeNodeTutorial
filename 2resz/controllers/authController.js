@@ -29,6 +29,10 @@ const createToken = (user, statusCode, req, res) => {
 exports.register = catchAsync(async (req, res, next) => {
   const { username, email, password, passwordConfirm } = req.body;
 
+  if (password !== passwordConfirm) {
+    return next(new AppError('Jelszó és a megerősítés különbözik', 400));
+  }
+
   const newPassword = hash.computeHash(password, hash.generateSalt());
   const newUser = {
     username,

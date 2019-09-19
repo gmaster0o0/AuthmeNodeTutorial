@@ -4,12 +4,21 @@ const AppError = require('../utils/error');
 
 module.exports = class Model {
   constructor(table) {
+    if (Model.instance) {
+      return Model.instance;
+    }
+
+    Model.instance = this;
+
     this.table = table;
     this.pool = mysql.createPool({
       host: process.env.MYSQL_HOST,
       user: process.env.MYSQL_USER,
       database: process.env.MYSQL_DATABASE,
-      password: process.env.MYSQL_PASSWORD
+      password: process.env.MYSQL_PASSWORD,
+      waitForConnections: true,
+      connectionLimit: 10,
+      queueLimit: 0
     });
     this.connection = this.pool.promise();
     this.connection
@@ -18,6 +27,8 @@ module.exports = class Model {
         console.log(`Adatbázis kapcsolat létrejött:${process.env.MYSQL_HOST}`);
       })
       .catch(console.log);
+
+    return this;
   }
 
   /**
@@ -32,8 +43,6 @@ module.exports = class Model {
       return rows;
     } catch (error) {
       return new AppError(error, 500);
-    } finally {
-      if (this.connection) this.pool.end();
     }
   }
 
@@ -54,8 +63,6 @@ module.exports = class Model {
       return row;
     } catch (error) {
       return new AppError(error, 500);
-    } finally {
-      if (this.connection) this.pool.end();
     }
   }
 
@@ -77,8 +84,6 @@ module.exports = class Model {
       return res;
     } catch (error) {
       return new AppError(error, 500);
-    } finally {
-      if (this.connection) this.pool.end();
     }
   }
 
@@ -99,8 +104,6 @@ module.exports = class Model {
       return rows;
     } catch (error) {
       return new AppError(error, 500);
-    } finally {
-      if (this.connection) this.pool.end();
     }
   }
 
@@ -115,8 +118,6 @@ module.exports = class Model {
       return await this.connection.execute(queryString);
     } catch (error) {
       return new AppError(error, 500);
-    } finally {
-      if (this.connection) this.pool.end();
     }
   }
   //connect = await mysqlthis.connection.connect();
