@@ -17,11 +17,34 @@ Annak akit erdekel a programozas, javascript, vagy epp a szerveret szeretne kics
 **Mi van ha lemaradtam**
 :tv: A tutorial megtalalhato a www.youtube.com/epiteszsuli csatornan. A Authme Tutorial lejatszasi listaba
 
+<<<<<<< HEAD
 ## 1. rész: Indulás és Setuphttps://youtu.be/s9tLocOKlPQ (2019.09.14)
 
 ## 2. rész: Refaktorálás MVC strukturára https://www.youtube.com/watch?v=CpHUenHkXMk (2019.09.18)
 
 ## 3. rész: VIEW elkészítése
+=======
+## 1. rész: Indulás és Setup
+
+https://youtu.be/s9tLocOKlPQ (2019.09.14)
+
+## 2. rész: Refaktorálás MVC strukturára
+
+https://www.youtube.com/watch?v=CpHUenHkXMk (2019.09.18)
+
+## 3. rész: Login, register, user listazas VIEW elkészítése
+
+Kezdés: 2019.09.20 17:00
+https://www.youtube.com/watch?v=F-8oGFV9QdA
+
+## 4. rész: User role-ok: Admin user. User törlés, Jelszó módosítása
+
+## 5. rész: Elfelejtett jelszó vissza állítása
+
+## 6. rész Validálás: bemenő adatok ellenörzése
+
+## 7. rész: Biztonság. SQL Injection, és egyéb web security alapok
+>>>>>>> 2. resz utan livebol kimaradtak
 
 ## Amire szukseged lesz: fejlesztesi kornyezet beallitasa
 
@@ -100,9 +123,15 @@ Az authme alapba sqlite-ot hasznal, de az nem halozati adatbazis, igy nem tudnan
 Mi a tutorialba, mi egy ingyenes mysql adatbazist fogunk hasznalni:
 https://remotemysql.com
 Az itt kapott adatokkal modositjuk az authme configjat.
+<<<<<<< HEAD
 
 ### :heavy_exclamation_mark: :heavy_exclamation_mark: :heavy_exclamation_mark: <span style="color:red">**NE HASZNÁLD AZ ITT LEVŐ PÉLDA ADATOKAT**</span>. :heavy_exclamation_mark: :heavy_exclamation_mark: :heavy_exclamation_mark:
 
+=======
+
+### :heavy_exclamation_mark: :heavy_exclamation_mark: :heavy_exclamation_mark: <span style="color:red">**NE HASZNÁLD AZ ITT LEVŐ PÉLDA ADATOKAT**</span>. :heavy_exclamation_mark: :heavy_exclamation_mark: :heavy_exclamation_mark:
+
+>>>>>>> 2. resz utan livebol kimaradtak
 Példa:
 
 ```Yaml
