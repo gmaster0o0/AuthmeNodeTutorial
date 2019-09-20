@@ -100,8 +100,7 @@ module.exports = class Model {
       )} = '${Object.values(item)}'`;
 
       const [rows] = await this.connection.execute(queryString);
-      console.log(item);
-      return rows;
+      return rows[0];
     } catch (error) {
       return new AppError(error, 500);
     }

@@ -20,12 +20,10 @@ const createToken = (user, statusCode, req, res) => {
     httpOnly: true
   });
 
-  //res.status(statusCode).json({
-  //status: 'success',
-  //data: user
-  //});
-
-  res.redirect(200, '/');
+  res.status(statusCode).json({
+    status: 'success',
+    data: user
+  });
 };
 
 exports.register = catchAsync(async (req, res, next) => {
@@ -49,18 +47,18 @@ exports.register = catchAsync(async (req, res, next) => {
 
 exports.login = catchAsync(async (req, res, next) => {
   const { username, password } = req.body;
+  const result = await User.getOne({ username }, ['username, password']);
 
-  const result = await User.getOne({ username }, ['password']);
   if (result.length === 0) {
     return next(new AppError('Felhasznaló nem található!', 404));
   }
 
-  const storedPassword = result[0].password;
+  const storedPassword = result.password;
   if (!hash.verifyPassword(storedPassword, password)) {
     return next(new AppError('Hibás felhasználónév vagy jelszó!', 404));
   }
 
-  createToken('login succesfull', 200, req, res);
+  createToken(result, 200, req, res);
 });
 
 exports.protected = catchAsync(async (req, res, next) => {
@@ -74,13 +72,37 @@ exports.protected = catchAsync(async (req, res, next) => {
   if (!token) {
     return next(new AppError('Nem vagy beloginolva, kérlek tedd meg, hogy elérd ezt az oldalt', 401));
   }
-
   const decoded = await util.promisify(jwt.verify)(token, process.env.JWT_SECRET);
-
-  const user = await User.getOne({ username: decoded });
+  const user = await User.getOne({ username: decoded.username });
 
   if (!user) {
     return next(new AppError('Ehhez a tokenhez nem tartozik user', 401));
+  }
+  //HA eljutnk ide akkor mindek oke es tobbi middleware szamara kuldunk adatot
+  req.user = user;
+  res.locals.user = user;
+  next();
+});
+
+exports.isLoggedIn = catchAsync(async (req, res, next) => {
+  let token;
+  if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
+    token = req.headers.authorization.split(' ')[1];
+  } else if (req.cookies.jwt) {
+    token = req.cookies.jwt;
+  }
+
+  if (!token) {
+    return next();
+  }
+
+  const decoded = await util.promisify(jwt.verify)(token, process.env.JWT_SECRET);
+
+  const user = await User.getOne({ username: decoded.username });
+
+  res.locals.user = user;
+  if (!user) {
+    return next();
   }
   next();
 });
