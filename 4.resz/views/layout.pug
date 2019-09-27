@@ -1,0 +1,57 @@
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+    link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css', rel='stylesheet')
+    title Document
+  body
+    nav.navbar.navbar-expand-sm.navbar-dark.bg-dark
+      a.navbar-brand(href='#') Authme Nodejs Tutorial
+      button.navbar-toggler.d-lg-none(type='button', data-toggle='collapse', data-target='#collapsibleNavId', aria-controls='collapsibleNavId', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #collapsibleNavId.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto.mt-2.mt-lg-0
+          li.nav-item.active
+            a.nav-link(href='#')
+              | Home 
+              span.sr-only (current)
+          if user && user
+            li.nav-item
+              a.nav-link(href='/admin') Admin
+        if user
+          .btn-group
+            button.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', data-display='static', aria-haspopup='true', aria-expanded='false')
+              | #{user.username}
+            .dropdown-menu.dropdown-menu-lg-right
+              button.dropdown-item(type='button') Fiók beállítások
+              button.dropdown-item(type='button') Biztonsági beállítások
+              .dropdown-divider
+              button.dropdown-item(type='button') Kijelentkezés
+        else
+          form.form-inline.my-2.my-lg-0(action='api/v1/users/login', method='POST')
+            .col-auto
+              label.sr-only(for='inlineFormInputGroup') Username
+              .input-group.mb-2
+                .input-group-prepend
+                  .input-group-text
+                    i.fas.fa-user
+                input#inlineFormInputGroup.form-control(type='text', placeholder='Felhasználó név', name='username')
+            .col-auto
+              label.sr-only(for='inlineFormInputGroup') Jelszó
+              .input-group.mb-2
+                .input-group-prepend
+                  .input-group-text
+                    i.fas.fa-lock
+                input#inlineFormInputGroup.form-control(type='password', placeholder='Jelszó', name='password')
+            .col-auto
+              button.btn.btn-primary.mb-2(type='submit') Belépés
+          .col-auto
+            a.btn.btn-info.mb-2(href='#', role='button') Regisztráció
+
+    block content
+
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')
