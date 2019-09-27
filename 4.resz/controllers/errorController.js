@@ -8,9 +8,17 @@ const createError = (error, req, res) => {
   });
 };
 
+const renderErrorPage = (error, req, res) => {
+  console.log(error);
+  return res.render('error', { error, title: 'Oldal nem található' });
+};
+
 module.exports = (error, req, res, next) => {
   error.statusCode = error.statusCode || 500;
   error.status = error.status || 'error';
 
+  if (error.statusCode === 404) {
+    renderErrorPage(error, req, res);
+  }
   createError(error, req, res);
 };

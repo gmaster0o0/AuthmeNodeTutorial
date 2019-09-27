@@ -1,4 +1,11 @@
 extends layout
 
 block content
-  h1= message
+  .row.h-100.bg-secondary
+    .col-md-6.my-auto.mx-auto
+      h1.text-warning.display-1.text-center.py-5 Hopppááááácska
+      h1.text-danger.display-1.text-center.py-2 404
+      h3.text-white.text-center= error.message
+      .row
+        .col.text-center
+          a.btn.btn-warning(href='/') Vissza a fő oldalra
