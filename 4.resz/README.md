@@ -1,5 +1,7 @@
 # 4. rész. regisztrációs form elkészítése és bekötése
 
+https://www.youtube.com/watch?v=h2dngvqxUiY
+
 ## extra: ha marad ido akkor az error page elkészítése
 
 # Amire szükségünk lesz:

@@ -25,17 +25,21 @@ https://youtu.be/s9tLocOKlPQ (2019.09.14)
 
 https://www.youtube.com/watch?v=CpHUenHkXMk (2019.09.18)
 
-## 3. rész: Login, register, user listazas VIEW elkészítése
+## 3. rész: Login, user listazas VIEW elkészítése
 
 https://www.youtube.com/watch?v=F-8oGFV9QdA (2019.09.20)
 
-## 4. rész: User role-ok: Admin user. User törlés, Jelszó módosítása
+## 4.rész: Regisztráció és 404-es error page
 
-## 5. rész: Elfelejtett jelszó vissza állítása
+https://www.youtube.com/watch?v=h2dngvqxUiY (2019.09.27)
 
-## 6. rész Validálás: bemenő adatok ellenörzése
+## 5. rész: User role-ok: Admin user. User törlés, Jelszó módosítása
 
-## 7. rész: Biztonság. SQL Injection, és egyéb web security alapok
+## 6. rész: Elfelejtett jelszó vissza állítása
+
+## 7. rész Validálás: bemenő adatok ellenörzése
+
+## 8. rész: Biztonság. SQL Injection, és egyéb web security alapok
 
 ## Amire szukseged lesz: fejlesztesi kornyezet beallitasa
 
