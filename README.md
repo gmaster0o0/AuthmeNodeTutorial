@@ -33,21 +33,10 @@ https://www.youtube.com/watch?v=F-8oGFV9QdA (2019.09.20)
 
 https://www.youtube.com/watch?v=h2dngvqxUiY (2019.09.27)
 
-<<<<<<< HEAD
-## 5. rész: User role-ok: Admin user. 
-
-## 6. rész: User törlés, Jelszó módosítása
-=======
 ## 5. rész: Kijelentkezés, User role-ok: Admin user.
->>>>>>> 5. resz kezdo kodja
 
 https://www.youtube.com/watch?v=oVNOxCCZukk (2019.10.05)
 
-<<<<<<< HEAD
-## 7. rész: Biztonság. Web biztonság alapok
-
-## 8. rész Validálás: bemenő adatok ellenörzése
-=======
 ## 6. rész Input validálás
 
 ## 7. rész User törlés, Jelszó módosítása
@@ -55,7 +44,6 @@ https://www.youtube.com/watch?v=oVNOxCCZukk (2019.10.05)
 ## 8. rész Validálás: bemenő adatok ellenörzése
 
 ## 9. rész: Biztonság. SQL Injection, és egyéb web security alapok
->>>>>>> 5. resz kezdo kodja
 
 ## Amire szukseged lesz: fejlesztesi kornyezet beallitasa
 
