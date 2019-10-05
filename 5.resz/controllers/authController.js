@@ -1,5 +1,7 @@
 const jwt = require('jsonwebtoken');
 const util = require('util');
+const fs = require('fs');
+const path = require('path');
 
 const AppError = require('../utils/error');
 const catchAsync = require('../utils/catchAsync');
@@ -19,11 +21,8 @@ const createToken = (user, statusCode, req, res) => {
     maxAge: 60 * 60 * 24 * 30 * 1000,
     httpOnly: true
   });
-  // TODO json helyett redirect, vagy render
-  res.status(statusCode).json({
-    status: 'success',
-    data: user
-  });
+
+  res.redirect('/');
 };
 
 exports.register = catchAsync(async (req, res, next) => {
@@ -107,6 +106,18 @@ exports.isLoggedIn = catchAsync(async (req, res, next) => {
   next();
 });
 
-//TODO isAdmin middleware elkeszitese
+exports.isAdmin = (req, res, next) => {
+  const userRoles = JSON.parse(fs.readFileSync(path.join(__dirname, '../config/userRoles.json')));
+  const { admins } = userRoles;
 
-//TODO logout elkeszitese
+  if (!admins.includes(req.user.username)) {
+    return next(new AppError('Ehhez az oldalhoz adminak kell lenned', 403));
+  }
+  res.locals.isAdmin = true;
+  next();
+};
+
+exports.logout = (req, res, next) => {
+  res.cookie('jwt', 'logout', { expires: new Date(Date.now() + 10), httpOnly: true });
+  res.redirect('/');
+};

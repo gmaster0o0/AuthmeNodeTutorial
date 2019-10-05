@@ -9,6 +9,7 @@ const AppError = require('./utils/error');
 const globalErrorHandler = require('./controllers/errorController');
 const usersRouter = require('./routes/userRoute');
 const viewRouter = require('./routes/viewRoute');
+const adminRouter = require('./routes/adminRouter');
 
 const app = express();
 
@@ -23,8 +24,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', viewRouter);
-app.use('/api/v1/users', usersRouter);
-
+app.use('/users', usersRouter);
+app.use('/admin', adminRouter);
 app.all('*', (req, res, next) => {
   next(new AppError(`${req.originalUrl} Oldal nem található a szerveren`, 404));
 });
