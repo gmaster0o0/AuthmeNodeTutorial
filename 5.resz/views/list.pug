@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  .container.w-100.mx-auto.mt-5
+    ul.list-group
+      li.list-group-item.disabled.bg-info.text-white
+        a Authme felhasznalól
+      each val in userList
+        li.list-group-item
+          .row
+            .col-md-9
+              h3 #{val.username}
+            .col-md-3.right
+              .d-flex.justify-content-end
+                a.btn.btn-info(href='#', role='button') Jelszó változtatás
+                a.btn.btn-danger.ml-2(href='#', role='button') Törlés

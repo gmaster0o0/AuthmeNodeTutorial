@@ -20,12 +20,10 @@ exports.register = async (req, res, next) => {
     const result = await connection.query(queryString, [username, username.toLowerCase(), newPassword, email]);
 
     const token = singToken(username);
-    // TODO FIX maxAge
     res.cookie('jwt', token, {
       maxAge: 60 * 60 * 24 * 30 * 1000,
       httpOnly: true
     });
-
     res.json({
       status: 'success',
       data: result
@@ -53,7 +51,6 @@ exports.login = async (req, res, next) => {
     if (!hash.verifyPassword(storedPassword, password)) {
       return AppError(res, 'Hibás felhasználónév vagy jelszó!', 404);
     }
-    // TODO FIX maxAge and create a function
     const token = singToken(username);
     res.cookie('jwt', token, {
       maxAge: 60 * 60 * 24 * 30 * 1000,
