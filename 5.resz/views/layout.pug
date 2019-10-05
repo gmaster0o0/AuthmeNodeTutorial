@@ -18,7 +18,7 @@ html(lang='en')
             a.nav-link(href='#')
               | Home 
               span.sr-only (current)
-          if user && user
+          if isAdmin
             li.nav-item
               a.nav-link(href='/admin') Admin
         if user
@@ -26,12 +26,12 @@ html(lang='en')
             button.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', data-display='static', aria-haspopup='true', aria-expanded='false')
               | #{user.username}
             .dropdown-menu.dropdown-menu-lg-right
-              button.dropdown-item(type='button') Fiók beállítások
-              button.dropdown-item(type='button') Biztonsági beállítások
+              a.dropdown-item Fiók beállítások
+              a.dropdown-item Biztonsági beállítások
               .dropdown-divider
-              button.dropdown-item(type='button') Kijelentkezés
+              a.dropdown-item(href='/logout') Kijelentkezés
         else
-          form.form-inline.my-2.my-lg-0(action='api/v1/users/login', method='POST')
+          form.form-inline.my-2.my-lg-0(action='/users/login', method='POST')
             .col-auto
               label.sr-only(for='inlineFormInputGroup') Username
               .input-group.mb-2

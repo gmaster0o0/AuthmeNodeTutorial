@@ -1,16 +1,16 @@
 const createError = (error, req, res) => {
   console.log(error);
-  return res.status(error.statusCode).json({
-    status: error.status,
-    error: error,
-    message: error.message,
-    stack: error.stack
-  });
+  return res.render('error', { error, title: error.message, message: error.message });
 };
 
-const renderErrorPage = (error, req, res) => {
+const pageNotFound = (error, req, res) => {
   console.log(error);
-  return res.render('error', { error, title: 'Oldal nem található' });
+  return res.render('error', { error, title: 'Oldal nem található', message: error.message });
+};
+
+const InternalServerError = (error, req, res) => {
+  console.log(error);
+  return res.render('error', { error, title: 'Valami baj történt', message: 'Valami nem jól sült el' });
 };
 
 module.exports = (error, req, res, next) => {
@@ -18,7 +18,11 @@ module.exports = (error, req, res, next) => {
   error.status = error.status || 'error';
 
   if (error.statusCode === 404) {
-    renderErrorPage(error, req, res);
+    pageNotFound(error, req, res);
+  }
+
+  if (error.statusCode === 500) {
+    InternalServerError(error, req, res);
   }
   createError(error, req, res);
 };
