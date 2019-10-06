@@ -99,6 +99,7 @@ exports.isLoggedIn = catchAsync(async (req, res, next) => {
 
   const user = await User.getOne({ username: decoded.username });
 
+  req.user = user;
   res.locals.user = user;
   if (!user) {
     return next();
@@ -111,13 +112,25 @@ exports.isAdmin = (req, res, next) => {
   const { admins } = userRoles;
 
   if (!admins.includes(req.user.username)) {
-    return next(new AppError('Ehhez az oldalhoz adminak kell lenned', 403));
+    return next();
   }
   res.locals.isAdmin = true;
   next();
 };
 
+exports.onlyForAdmin = (req, res, next) => {
+  const userRoles = JSON.parse(fs.readFileSync(path.join(__dirname, '../config/userRoles.json')));
+  const { admins } = userRoles;
+
+  if (!admins.includes(req.user.username)) {
+    return next(new AppError('Ehhez az oldalhoz adminak kell lenned', 403));
+  }
+  req.isAdmin = true;
+  res.locals.isAdmin = true;
+  next();
+};
+
 exports.logout = (req, res, next) => {
-  res.cookie('jwt', 'logout', { expires: new Date(Date.now() + 10), httpOnly: true });
+  res.cookie('jwt', 'logout', { expires: new Date(Date.now()), httpOnly: true });
   res.redirect('/');
 };

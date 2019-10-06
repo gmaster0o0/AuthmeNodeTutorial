@@ -1,4 +1,20 @@
 extends layout
 
 block content
-  h1.display-3.text-center.m-5 Authme Nodejs Webintegrációs tutoriál
+  .container.w-100.mx-auto
+    .jumbotron
+      h1.display-4 Authme Nodejs Webintegrációs tutoriál
+      p.lead
+        | Ez egy tutorial oldal, ami az authme plugin nodejs integracóját mutatja be
+      hr.my-4
+      p
+        | Ha kiváncsi vagy az eddigi részekre kattints a "Tovább gombra"
+      p.lead
+      a.btn.btn-primary(data-toggle='collapse', href='#collapseExample', role='button', aria-expanded='false', aria-controls='collapseExample') Tovább
+      #collapseExample.collapse
+        .list-group.mt-3
+          a.list-group-item.list-group-item-action(href='https://youtu.be/s9tLocOKlPQ') 1. rész: Indulás és Setup. (2019.09.14)
+          a.list-group-item.list-group-item-action(href="https://www.youtube.com/watch?v=CpHUenHkXMk") 2. rész: Refaktorálás MVC strukturára. (2019.09.18)
+          a.list-group-item.list-group-item-action(href='https://www.youtube.com/watch?v=F-8oGFV9QdA') 3. rész: Login, user listazas VIEW elkészítés. (2019.09.20)
+          a.list-group-item.list-group-item-action(href='https://www.youtube.com/watch?v=h2dngvqxUiY') 4.rész: Regisztráció és 404-es error page. (2019.09.27)
+          a.list-group-item.list-group-item-action(href='https://www.youtube.com/watch?v=oVNOxCCZukk') 5. rész: Kijelentkezés, User role-ok: Admin user. (2019.10.05)
