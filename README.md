@@ -48,7 +48,7 @@ https://youtu.be/53Mqc3fDWIE (2019.10.11)
 
 ## 10. rész: Deployolas: Hogyan rakjuk fel szerverre, hogy más is lássa.
 
-## Amire szukseged lesz: fejlesztesi kornyezet beallitasa
+# Amire szukseged lesz: fejlesztesi kornyezet beallitasa
 
 **Letoltendo programok**
 
