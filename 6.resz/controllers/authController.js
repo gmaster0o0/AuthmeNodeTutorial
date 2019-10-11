@@ -132,5 +132,9 @@ exports.onlyForAdmin = (req, res, next) => {
 
 exports.logout = (req, res, next) => {
   res.cookie('jwt', 'logout', { expires: new Date(Date.now()), httpOnly: true });
+<<<<<<< HEAD
   return res.redirect('/');
+=======
+  res.redirect('/');
+>>>>>>> 77da9414b3f2ae621856ad02408ab7be9a487fc9
 };
