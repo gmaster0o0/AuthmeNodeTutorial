@@ -46,6 +46,8 @@ https://youtu.be/53Mqc3fDWIE (2019.10.11)
 
 ## 9. rész: Biztonság. SQL Injection, és egyéb web security alapok
 
+## 10. rész: Deployolas: Hogyan rakjuk fel szerverre, hogy más is lássa.
+
 ## Amire szukseged lesz: fejlesztesi kornyezet beallitasa
 
 **Letoltendo programok**
