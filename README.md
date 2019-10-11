@@ -38,6 +38,7 @@ https://www.youtube.com/watch?v=h2dngvqxUiY (2019.09.27)
 https://www.youtube.com/watch?v=oVNOxCCZukk (2019.10.05)
 
 ## 6. rész User törlés
+https://youtu.be/53Mqc3fDWIE (2019.10.11)
 
 ## 7. rész Jelszó módosítása
 
