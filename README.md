@@ -37,9 +37,9 @@ https://www.youtube.com/watch?v=h2dngvqxUiY (2019.09.27)
 
 https://www.youtube.com/watch?v=oVNOxCCZukk (2019.10.05)
 
-## 6. rész Input validálás
+## 6. rész User törlés
 
-## 7. rész User törlés, Jelszó módosítása
+## 7. rész Jelszó módosítása
 
 ## 8. rész Validálás: bemenő adatok ellenörzése
 
