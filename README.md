@@ -15,7 +15,7 @@ Annak akit érdekel a programozás, Javascript, vagy épp a szerveret szeretné 
 :tv: Minden rész élőben zajlik a www.youtube.com/epiteszsuli/live linkkel lehet elérni ha épp van adás.
 
 **Mi van ha lemaradtam?**
-:tv: A tutorial megtalálható a www.youtube.com/epiteszsuli csatornán. A Authme Tutorial lejátszasi listaban.
+:tv: A tutorial megtalálható a www.youtube.com/epiteszsuli csatornán. A [Authme Tutorial lejátszasi listaban](https://www.youtube.com/playlist?list=PLYHEY0QLer7vKZ97ru7w37_NdU93czhlp).
 
 ## 1. rész: Indulás és Setup
 
