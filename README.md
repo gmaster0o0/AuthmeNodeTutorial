@@ -25,19 +25,20 @@ https://youtu.be/s9tLocOKlPQ (2019.09.14)
 
 https://www.youtube.com/watch?v=CpHUenHkXMk (2019.09.18)
 
-## 3. rész: Login, user listazas VIEW elkészítése
+## 3. rész: Login, user listázás VIEW elkészítése
 
 https://www.youtube.com/watch?v=F-8oGFV9QdA (2019.09.20)
 
-## 4.rész: Regisztráció és 404-es error page
+## 4. rész: Regisztráció és 404-es error page
 
 https://www.youtube.com/watch?v=h2dngvqxUiY (2019.09.27)
 
-## 5. rész: Kijelentkezés, User role-ok: Admin user.
+## 5. rész: Kijelentkezés, User role-ok: Admin user
 
 https://www.youtube.com/watch?v=oVNOxCCZukk (2019.10.05)
 
 ## 6. rész User törlés
+
 https://youtu.be/53Mqc3fDWIE (2019.10.11)
 
 ## 7. rész Jelszó módosítása
@@ -46,19 +47,19 @@ https://youtu.be/53Mqc3fDWIE (2019.10.11)
 
 ## 9. rész: Biztonság. SQL Injection, és egyéb web security alapok
 
-## 10. rész: Deployolas: Hogyan rakjuk fel szerverre, hogy más is lássa.
+## 10. rész: Deployolás: Hogyan rakjuk fel szerverre, hogy más is lássa?
 
-# Amire szukseged lesz: fejlesztesi kornyezet beallitasa
+# Amire szükséged lesz: fejlesztési környezet beállítása
 
-**Letoltendo programok**
+**Letöltendő programok**
 
 - **NodeJS**
-  Toltsd le es telepitsd a NodeJS-t. LST verzio tokeltes lesz.
+  Töltsd le és telepítsd a NodeJS-t. LTS verzio tokeltes lesz.
   https://nodejs.org/en/
 
-- **Adatbazis**
-  Az adattarolashoz szuksegunk lesz egy SQL adatbazisa.
-  Az authme configja a kovetkezoket tamogatja:
+- **Adatbázis**
+  Az adattároláshoz szükségünk lesz egy SQL adatbázisra.
+  Az Authme configja a következóket támogatja:
 
   | SQL        | link                              | package leírás                        | telepítő parancs           |
   | ---------- | --------------------------------- | ------------------------------------- | -------------------------- |
@@ -66,20 +67,22 @@ https://youtu.be/53Mqc3fDWIE (2019.10.11)
   | MYSQL      | https://www.mysql.com/            | https://www.npmjs.com/package/sqlite3 | npm install --save sqlite3 |
   | POSTGRESQL | https://www.postgresql.org/       | https://node-postgres.com/            | npm install pg             |
 
-* **VSCode**
-  Toltsd le es telepitsd a Node
+- **VSCode**
+  Töltsd le és telepítsd a Node
   https://code.visualstudio.com/
 
-* **Minecraft szerver**
+- **Minecraft szerver**
 
-1. Teszteleshez toltsd le es indits el egy minecraft szervert local gepre,
-   Mi az 1.12 paper spigot legacyt fogjuk hasznalni: https://papermc.io/legacy
-2. Rakj fel egy authme plugin-t
+1. Teszteléshez töltsd le és indíts el egy minecraft szervert local gépen,\
+   Mi az 1.12 paper spigot legacyt fogjuk használni: https://papermc.io/legacy
+
+2. Rakj fel egy Authme plugin-t.\
    Authme Reloaded plugin: https://www.spigotmc.org/resources/authmereloaded.6269/
-3. Configold be, a configfileba allitsd be az adatbazist.
+
+3. Configold be, a configfile-ba állítsd be az adatbázist.
 
 - **GIT** opcionalisan
-  verzio kezelo rendszert fogunk hasznalni, de le is lehet tolteni zipkent es kicsomagolni.
+  Verzio kezelő rendszert fogunk használni, de le is lehet tölteni zipként és kicsomagolni.
 
 # `1. # project beallitasa.`
 
