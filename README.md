@@ -1,21 +1,21 @@
 # AuthmeNodeTutorial
 
-Authme weblogin tutorial NodeJS-be. 0-rol feleptunk egy alap nodejs alapu weboldalt, ami kezeli az authme felhasznalokat.
+Authme weblogin tutorial NodeJS-sel. Nulláról felépítünk egy alap NodeJS alapú weboldalt, ami kezeli az Authme felhasználókat.
 
-**Mirol szol a tutorial**
-A tutorial, az authme integaciorol szol, az erintett technologiak nem mutatja be. Minden erintett technologiarol leiras linkje megtalalhato az adott reszhez tartozo leirasnal, illetve a itt a fo oldalon a lap aljan.
+**Miről szól a tutorial?**
+A tutorial, az Authme integrációról szól, az érintett technológiákat nem mutatja be. Minden érintett technológiáról leírás linkje megtalálható az adott részhez tartozó leírásnál, illetve itt a fő oldalon a lap alján.
 
-**Hogy miert Nodejs es miert nem PHP** :scream::scream::scream:
+**Hogy miért NodeJS és miért nem PHP?** :scream::scream::scream:
 https://youtu.be/MqY83YjA0JE?t=86
 
-**Kinek ajanljuk?**
-Annak akit erdekel a programozas, javascript, vagy epp a szerveret szeretne kicsit feldobni.
+**Kinek ajánljuk?**
+Annak akit érdekel a programozás, Javascript, vagy épp a szerveret szeretné kicsit feldobni.
 
-**Hol lathato a tutorial**
-:tv: Minden resz elobe zajlik a www.youtube.com/epiteszsuli/live linkel lehet elerni ha epp van adas.
+**Hol láthato a tutorial?**
+:tv: Minden rész élőben zajlik a www.youtube.com/epiteszsuli/live linkkel lehet elérni ha épp van adás.
 
-**Mi van ha lemaradtam**
-:tv: A tutorial megtalalhato a www.youtube.com/epiteszsuli csatornan. A Authme Tutorial lejatszasi listaba
+**Mi van ha lemaradtam?**
+:tv: A tutorial megtalálható a www.youtube.com/epiteszsuli csatornán. A Authme Tutorial lejátszasi listaban.
 
 ## 1. rész: Indulás és Setup
 
