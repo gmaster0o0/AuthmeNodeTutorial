@@ -17,7 +17,7 @@ nav.navbar.navbar-expand-sm.navbar-dark.bg-dark
           | #{user.username}
         .dropdown-menu.dropdown-menu-lg-right
           a.dropdown-item Fiók beállítások
-          a.dropdown-item Biztonsági beállítások
+          a.dropdown-item(href='/changepassword') Biztonsági beállítások
           .dropdown-divider
           a.dropdown-item(href='/logout') Kijelentkezés
     else

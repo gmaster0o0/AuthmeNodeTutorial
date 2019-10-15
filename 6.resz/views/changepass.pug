@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  .row.h-100
+    .col-sm-6.my-auto.mx-auto
+      .card.bg-dark
+        .card-header.bg-info
+          h1.text-white Jelszó változtatás
+        .card-body
+          form(action='/users/changepassword', method='post')
+            .form-group
+              label(for='').text-white  Felhasználónév
+              input.form-control(type='text', placeholder='Felhasználónév', name='username')
+              small.form-text.text-muted Felhasználónév
+            .form-group
+              label(for='').text-white  Új Jelszó
+              input.form-control(type='password', placeholder='', name='newpassword')
+              small.form-text.text-muted Új jelszó. Minimum 8 karakter, kis és nagy betűkkel.
+            button.btn.btn-danger(type='submit') Jelszó változtatás 

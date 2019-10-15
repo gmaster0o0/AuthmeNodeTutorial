@@ -14,4 +14,8 @@ router.get('/register', authController.isLoggedIn, function(req, res, next) {
 
 router.get('/logout', authController.logout);
 
+router.get('/changepassword', function(req, res, next){
+  res.render('changepass', {title: 'Jelszó változtatás'});
+});
+
 module.exports = router;

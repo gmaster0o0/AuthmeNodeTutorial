@@ -13,4 +13,7 @@ module.exports = class UserModel extends Model {
   deleteOne(item) {
     return super.deleteOne(item);
   }
+  updateOne(item, newValues) {
+    return super.updateOne(item, newValues);
+  }
 };

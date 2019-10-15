@@ -20,3 +20,9 @@ exports.deleteUser = catchAsync(async (req, res, next) => {
 
   return res.status(304).redirect('/admin');
 });
+
+exports.changeUserPass = catchAsync(async (req, res, next) =>{
+  const { username, newpassword } = req.body;
+  const result = await user.changeUserPass({username, password:newpassword})
+  console.log(result);
+});
