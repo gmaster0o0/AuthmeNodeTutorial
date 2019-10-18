@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  .container.w-100.mx-auto.mt-5
+    ul.list-group
+      li.list-group-item.disabled.bg-info.text-white
+        a Authme felhasznalók
+      each val,index in userList
+        li.list-group-item
+          .row
+            .col-md-9
+              h3 #{val.username}
+            .col-md-3.right
+              .d-flex.justify-content-end
+                button.btn.btn-primary(type='button', data-toggle='collapse', data-target=`#collapse${index}`, aria-expanded='false', aria-controls=`collapse${index}`)
+                  | Jelszó változtatás
+                a.btn.btn-danger.ml-2(href=`/users/delete/${val.username}`, role='button') Törlés
+          .row.collapse(id=`collapse${index}`)
+            form.form-inline(action="/users/updatePassword", method="post")
+              input(type="text" name='username' value=`${val.username}` hidden='')
+              .row.mx-0
+                .form-group.mx-2
+                  small.form-text.text-muted Új jelszó
+                  input.form-control(type='password', placeholder='', name='password')
+                .form-group.mx-2
+                  small.form-text.text-muted Új jelszó mégegyszer
+                  input.form-control(type='password', placeholder='', name='passwordConfirm')
+
+                button.btn.btn-primary(type='submit') Változtat
