@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  .row.h-100.bg-secondary
+    .col-md-6.my-auto.mx-auto
+      h1.text-warning.display-1.text-center.py-5 Hopppááááácska
+      h1.text-danger.display-1.text-center.py-2= error.statusCode
+      h2.text-white.text-center.pb-3= message
+      .row
+        .col.text-center
+          a.btn.btn-warning(href='/') Vissza a fő oldalra
