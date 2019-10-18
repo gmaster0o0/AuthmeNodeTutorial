@@ -1,4 +1,4 @@
-# Együttműködés
+# Közreműködés
 
 ## Coding style betartása
 
