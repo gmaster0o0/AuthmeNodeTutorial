@@ -6,6 +6,7 @@ Minden rész tartalmaz egy prettier és egy eslinthez tartozó config file-t. Ez
 Egységes kód nélkül sokkal átláthatatlanabb lesz a kód.
 
 Vscode extensionok:
+
 https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 
