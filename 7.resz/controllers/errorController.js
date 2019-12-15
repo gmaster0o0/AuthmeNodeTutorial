@@ -18,11 +18,11 @@ module.exports = (error, req, res, next) => {
   error.status = error.status || 'error';
 
   if (error.statusCode === 404) {
-    pageNotFound(error, req, res);
+    return pageNotFound(error, req, res);
   }
 
   if (error.statusCode === 500) {
-    InternalServerError(error, req, res);
+    return InternalServerError(error, req, res);
   }
-  createError(error, req, res);
+  return createError(error, req, res);
 };

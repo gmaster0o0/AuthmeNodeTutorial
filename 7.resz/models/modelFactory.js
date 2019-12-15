@@ -83,7 +83,7 @@ module.exports = class Model {
       const res = await this.connection.query(queryString, values);
       return res;
     } catch (error) {
-      return new AppError(error, 500);
+      throw new AppError(error.message, 500);
     }
   }
 
@@ -102,7 +102,7 @@ module.exports = class Model {
       const [rows] = await this.connection.execute(queryString);
       return rows[0];
     } catch (error) {
-      return new AppError(error, 500);
+      throw new AppError(error.message, 500);
     }
   }
 
@@ -116,7 +116,7 @@ module.exports = class Model {
 
       return await this.connection.execute(queryString);
     } catch (error) {
-      return new AppError(error, 500);
+      throw new AppError(error.message, 500);
     }
   }
   //connect = await mysqlthis.connection.connect();
