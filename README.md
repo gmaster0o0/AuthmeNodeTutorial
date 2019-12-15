@@ -42,6 +42,7 @@ https://www.youtube.com/watch?v=oVNOxCCZukk (2019.10.05)
 https://youtu.be/53Mqc3fDWIE (2019.10.11)
 
 ## 7. rész Jelszó módosítása
+https://www.youtube.com/watch?v=9dr5fPwyLqc (2019.10.18)
 
 ## 8. rész Validálás: bemenő adatok ellenörzése
 
