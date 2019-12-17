@@ -1,0 +1,42 @@
+nav.navbar.navbar-expand-sm.navbar-dark.bg-dark
+  a.navbar-brand(href='#') Authme Nodejs Tutorial
+  button.navbar-toggler.d-lg-none(type='button', data-toggle='collapse', data-target='#collapsibleNavId', aria-controls='collapsibleNavId', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #collapsibleNavId.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto.mt-2.mt-lg-0
+      li.nav-item.active
+        a.nav-link(href='#')
+          | Home 
+          span.sr-only (current)
+      if isAdmin
+        li.nav-item
+          a.nav-link(href='/admin') Admin
+    if user
+      .btn-group
+        button.btn.btn-secondary.dropdown-toggle(type='button', data-toggle='dropdown', data-display='static', aria-haspopup='true', aria-expanded='false')
+          | #{user.username}
+        .dropdown-menu.dropdown-menu-lg-right
+          a.dropdown-item Fiók beállítások
+          a.dropdown-item Biztonsági beállítások
+          .dropdown-divider
+          a.dropdown-item(href='/logout') Kijelentkezés
+    else
+      form.form-inline.my-2.my-lg-0(action='/users/login', method='POST')
+        .col-auto
+          label.sr-only(for='inlineFormInputGroup') Username
+          .input-group.mb-2
+            .input-group-prepend
+              .input-group-text
+                i.fas.fa-user
+            input.form-control(type='text', placeholder='Felhasználó név', name='username')
+        .col-auto
+          label.sr-only(for='inlineFormInputGroup') Jelszó
+          .input-group.mb-2
+            .input-group-prepend
+              .input-group-text
+                i.fas.fa-lock
+            input.form-control(type='password', placeholder='Jelszó', name='password')
+        .col-auto
+          button.btn.btn-primary.mb-2(type='submit') Belépés
+      .col-auto
+        a.btn.btn-info.mb-2(href='/register', role='button') Regisztráció
