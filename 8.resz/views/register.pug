@@ -1,0 +1,39 @@
+extends layout
+
+block content
+  .row.h-100
+    .col-sm-6.my-auto.mx-auto
+      .card.bg-dark
+        .card-header.bg-info
+          h1.text-white Regisztráció
+        .card-body
+          form(action='/users/register', method='post')
+            .form-group
+              label(for='').text-white  Felhasználónév
+              input.form-control(type='text', placeholder='Felhasználónév', name='username')
+              if !!errorMessage && errorMessage.username
+                small.form-text.text-danger #{errorMessage.username.msg}
+              else
+                small.form-text.text-muted Felhasználó névnek minimum 5 betünek kell lennie
+            .form-group
+              label(for='').text-white  Email
+              input.form-control(type='email', placeholder='Email', name='email')
+              if !!errorMessage && errorMessage.email
+                small.form-text.text-danger #{errorMessage.email.msg}
+              else
+                small.form-text.text-muted Az email cím a jelszó visszaáálításhoz kell
+            .form-group
+              label(for='').text-white  Jelszó
+              input.form-control(type='password', placeholder='', name='password')
+              if !!errorMessage && errorMessage.password
+                small.form-text.text-danger #{errorMessage.password.msg}
+              else
+                small.form-text.text-muted Minimum 8 karakter kis nagy-betű és szám
+            .form-group
+              label(for='').text-white  Jelszó megerősítése
+              input.form-control(type='password', placeholder='', name='passwordConfirm')
+              if !!errorMessage && errorMessage.passwordConfirm
+                small.form-text.text-danger #{errorMessage.passwordConfirm.msg}
+              else
+                small.form-text.text-muted Írd be a jelszavad mégegyszer
+            button.btn.btn-primary(type='submit') Regisztrál
