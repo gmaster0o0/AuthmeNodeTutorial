@@ -45,6 +45,7 @@ https://youtu.be/53Mqc3fDWIE (2019.10.11)
 https://www.youtube.com/watch?v=9dr5fPwyLqc (2019.10.18)
 
 ## 8. rész Validálás: bemenő adatok ellenörzése
+https://youtu.be/mN3DtlEBVi4 (2019.12.17)
 
 ## 9. rész: Biztonság. SQL Injection, és egyéb web security alapok
 
