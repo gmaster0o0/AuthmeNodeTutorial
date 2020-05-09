@@ -11,8 +11,10 @@ block content
             .form-group
               label(for='').text-white  Felhasználónév
               input.form-control(type='text', placeholder='Felhasználónév', name='username')
-              small.form-text.text-muted Felhasználó névnek minimum 5 betünek kell lennie
-            .form-group
+              if message
+                .invalid-feedback Felhasználónév kötelező
+              else
+                small.form-text.text-muted Felhasználó névnek minimum 5 betünek kell lenniegroup
               label(for='').text-white  Email
               input.form-control(type='email', placeholder='Email', name='email')
               small.form-text.text-muted Az email cím a jelszó visszaáálításhoz kell
