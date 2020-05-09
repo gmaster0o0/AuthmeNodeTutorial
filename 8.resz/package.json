@@ -12,7 +12,7 @@
     "dotenv": "^8.1.0",
     "express": "~4.16.1",
     "express-validator": "^6.3.0",
-    "husky": "^3.0.9",
+
     "jsonwebtoken": "^8.5.1",
     "morgan": "~1.9.1",
     "mysql2": "^1.7.0",
@@ -20,6 +20,7 @@
     "validator": "^12.1.0"
   },
   "devDependencies": {
+    "husky": "^3.0.9",
     "eslint": "^6.4.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.2.0",
