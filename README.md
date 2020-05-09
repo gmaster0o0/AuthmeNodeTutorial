@@ -12,7 +12,7 @@ https://youtu.be/MqY83YjA0JE?t=86
 Annak akit érdekel a programozás, Javascript, vagy épp a szerveret szeretné kicsit feldobni.
 
 **Hol láthato a tutorial?**
-:tv: Minden rész élőben zajlik a www.youtube.com/epiteszsuli/live linkkel lehet elérni ha épp van adás.
+:tv: Minden rész élőben zajlik a www.youtube.com/epiteszsuli csatornáján
 
 **Mi van ha lemaradtam?**
 :tv: A tutorial megtalálható a www.youtube.com/epiteszsuli csatornán. A [Authme Tutorial lejátszasi listaban](https://www.youtube.com/playlist?list=PLYHEY0QLer7vKZ97ru7w37_NdU93czhlp).
@@ -42,8 +42,10 @@ https://www.youtube.com/watch?v=oVNOxCCZukk (2019.10.05)
 https://youtu.be/53Mqc3fDWIE (2019.10.11)
 
 ## 7. rész Jelszó módosítása
+https://www.youtube.com/watch?v=9dr5fPwyLqc (2019.10.18)
 
 ## 8. rész Validálás: bemenő adatok ellenörzése
+https://youtu.be/mN3DtlEBVi4 (2019.12.17)
 
 ## 9. rész: Biztonság. SQL Injection, és egyéb web security alapok
 
