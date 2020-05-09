@@ -1,5 +1,5 @@
 {
-  "name": "authmetutorial",
+  "name": "example1",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -7,21 +7,15 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "connect-flash": "^0.1.1",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
-    "dotenv": "^8.1.0",
     "express": "~4.16.1",
-    "express-session": "^1.17.0",
-    "express-validator": "^6.3.0",
-
-    "jsonwebtoken": "^8.5.1",
+    "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
-    "mysql2": "^1.7.0",
-    "pug": "^2.0.4"
+    "pug": "2.0.0-beta11",
+    "sqlite3": "^4.2.0"
   },
   "devDependencies": {
-    "husky": "^3.0.9",
     "eslint": "^6.4.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.2.0",
@@ -33,11 +27,5 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^2.0.1",
     "prettier": "^1.18.2"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint",
-      "pre-push": "npm run lint"
-    }
   }
 }
