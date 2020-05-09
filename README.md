@@ -48,6 +48,7 @@ https://www.youtube.com/watch?v=9dr5fPwyLqc (2019.10.18)
 https://youtu.be/mN3DtlEBVi4 (2019.12.17)
 
 ## 9. rész: Biztonság. SQL Injection, és egyéb web security alapok
+https://youtu.be/lrHq34Ciq7Y (2020.05.09)
 
 ## 10. rész: Deployolás: Hogyan rakjuk fel szerverre, hogy más is lássa?
 
