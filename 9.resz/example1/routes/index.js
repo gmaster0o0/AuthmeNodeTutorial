@@ -25,7 +25,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/login', function(req, res, next) {
-  login2(req, res);
+  login4(req, res);
 });
 
 router.post('/register', function(req, res, next) {
@@ -79,7 +79,8 @@ const login2 = (req, res) => {
 
 const login3 = (req, res) => {
   const { username, password } = req.body;
-  const query = `SELECT * FROM user WHERE username  = "${username}"`;
+  const query = `SELECT * FROM user WHERE username  = '${username}'`;
+  console.log(query);
   db.get(query, (err, user) => {
     if (err) return res.send(err);
     if (!user || user.length === 0) return res.send('Nincs ilyen felhasznaló');
@@ -87,6 +88,28 @@ const login3 = (req, res) => {
 
     res.send({ status: 'sikers bejelntkezes', user });
   });
+};
+
+const login4 = (req, res) => {
+  const { username, password } = req.body;
+  if (!checkInput(username)) return res.send('Nem jo a megadott adat');
+  if (!checkInput(password)) return res.send('Nem jo a megadott adat');
+
+  const query = `SELECT * FROM user WHERE username  = '${username}'`;
+  console.log(query);
+  db.get(query, (err, user) => {
+    if (err) return res.send(err);
+    if (!user || user.length === 0) return res.send('Nincs ilyen felhasznaló');
+    if (user.password !== password) return res.send('Hibás jelszó');
+
+    user.password = undefined;
+    res.send({ status: 'sikers bejelntkezes', user });
+  });
+};
+
+const checkInput = input => {
+  const regexp = RegExp(/[\w-]+/);
+  return regexp.test(input);
 };
 
 module.exports = router;
