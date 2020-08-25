@@ -1,0 +1,38 @@
+extends layout
+
+block content
+  .container.py-3
+    .card
+      .card-header 
+        h2 Create User
+      .card-body
+        h5.card-title  
+          form(action='/register' method='POST')
+            .form-group
+              label(for='username') username
+              input.form-control(type='text', name='username' placeholder='username' autofocus=true)
+            .form-group
+              label(for='password') Password
+              input.form-control(type='text', name='password')
+            button.btn.btn-primary(type='submit') Create user
+  .container.py-3
+    .card
+      .card-header 
+        h2 Login
+      .card-body
+        h5.card-title  
+          form(action='/login' method='POST')
+            .form-group
+              label(for='username') username
+              input.form-control(type='text', name='username' placeholder='username' autofocus=true)
+            .form-group
+              label(for='password') Password
+              input.form-control(type='text', name='password')
+            button.btn.btn-primary(type='submit') Login
+  .container.py-3
+    h2 Users
+    ul.list-group
+      each user in users
+        li.list-group-item #{user.username}      
+
+
