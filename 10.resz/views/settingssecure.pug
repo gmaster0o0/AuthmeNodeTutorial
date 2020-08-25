@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  .container.mx-auto
+    h1 Beállítások
+    h3 felhasználónév: #{user.username}
+
+
+    .row.h-100
+      .col-sm-6.my-auto.mx-auto
+        .card.bg-dark
+          .card-header.bg-info
+            h5 jelszó megváltoztatása
+          .card-body.my-2.my-lg-0
+            form.form-inline.my-2.my-lg-0(action='/users/changemypasswordsecure', method='POST')
+              .col-auto
+                label.sr-only(for='inlineFormInputGroup') Username
+                .input-group.mb-2
+                  .input-group-prepend
+                    .input-group-text
+                       i.fas.fa-lock
+                  input.form-control(type='text', placeholder='Új jelszó', name='password')
+                  input(type="hidden", name="_csrf" value=csrfToken)
+              .col-auto
+                button.btn.btn-primary.mb-2(type='submit') Jelszó változtatás
+          .card-footer.text-white CSRF TOKEN: #{csrfToken}
