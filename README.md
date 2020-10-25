@@ -166,7 +166,7 @@ DataSource:
 
 Segitseget legkonnyebben discordon kaphatsz. Facebookon is valaszolok, de discordon lehet screen share-elni, liveolni és forrás kodot beilleszteni.
 
-[![discord](https://discordapp.com/api/guilds/329854736998334464/embed.png?style=banner3)][discord]
+[![discord](https://discordapp.com/api/guilds/416601822065721357/embed.png?style=banner3)][discord]
 
 # Ha hibat talaltok
 
