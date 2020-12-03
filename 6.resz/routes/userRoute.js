@@ -10,4 +10,6 @@ router.post('/register', authController.register);
 
 router.get('/delete/:username', userController.deleteUser);
 
+router.post('/changepassword', userController.changeUserPass);
+
 module.exports = router;
