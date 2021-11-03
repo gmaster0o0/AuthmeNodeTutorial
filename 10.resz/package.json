@@ -19,7 +19,7 @@
     "morgan": "~1.9.1",
     "mysql2": "^1.7.0",
     "pug": "^2.0.4",
-    "validator": "^12.1.0"
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "husky": "^3.0.9",
